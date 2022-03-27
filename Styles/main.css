@@ -50,6 +50,12 @@ body {
           box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
 }
 
+.mainWrapper .homework h2,
+.mainWrapper .homework h3 {
+  padding-left: 30px;
+  margin: 5px;
+}
+
 .mainWrapper .homework p {
   padding-left: 30px;
   margin: 5px;

@@ -33,6 +33,11 @@ body {
     background-color: rgba(180, 175, 175, 0.096);
     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
       inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+    h2,
+    h3 {
+      padding-left: 30px;
+      margin: 5px;
+    }
     p {
       padding-left: 30px;
       margin: 5px;
