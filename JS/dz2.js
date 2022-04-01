@@ -23,6 +23,7 @@ export default function dz2() {
     }
   }
 
+
   function getSymbol() {
     const symbol = prompt(
       "Введите один из доступных символов! '/' | '*' | '+' | '-'"
