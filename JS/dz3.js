@@ -18,7 +18,6 @@ export default function dz3() {
   //
 
   function checkUserData(number) {
-    debugger;
     if (isNaN(number) || number === "") {
       alert("This is not a number! Please enter a number!");
       return false;
