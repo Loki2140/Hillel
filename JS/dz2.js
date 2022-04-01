@@ -1,11 +1,9 @@
 // Calculator - усложнял исключительно в образовательных целях.
 
 export default function dz2() {
-  debugger;
   const firstNumber = Number(getNumber());
   const secondNumber = Number(getNumber());
   const symbol = String(getSymbol());
-  console.log(symbol);
   let total;
 
   if (isNaN(firstNumber) || isNaN(secondNumber) || symbol === "undefined") {

@@ -88,4 +88,13 @@ body {
   margin-left: auto;
   width: 15%;
 }
+
+@media only screen and (max-width: 768px) {
+  .mainWrapper {
+    width: 95%;
+  }
+  .mainWrapper .homework img {
+    width: 45%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

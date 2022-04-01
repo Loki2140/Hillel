@@ -66,6 +66,14 @@ body {
     }
   }
 }
+@media only screen and (max-width: 768px) {
+  .mainWrapper {
+    width: 95%;
+  }
+  .mainWrapper .homework img {
+    width: 45%;
+  }
+}
 
 // font-family: 'Amatic SC', cursive;
 // font-family: 'Anton', sans-serif;
