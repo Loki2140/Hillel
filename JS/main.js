@@ -1,5 +1,6 @@
 import dz1 from "../JS/dz1.js";
 import dz2 from "../JS/dz2.js";
+import dz3 from "../JS/dz3.js";
 
 let dz1Button = document
   .getElementById("dz1Button")
@@ -7,6 +8,6 @@ let dz1Button = document
 let dz2Button = document
   .getElementById("dz2Button")
   .addEventListener("click", dz2);
-// let dz2_1Button = document
-//   .getElementById("dz2_1Button")
-//   .addEventListener("click", dz2_1);
+let dz3Button = document
+  .getElementById("dz3Button")
+  .addEventListener("click", dz3);

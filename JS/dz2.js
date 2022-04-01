@@ -37,13 +37,13 @@ export default function dz2() {
     }
   }
 
-  function finalAlert(firstNumber, secondNumber, symbol, total) {
+  function showFinalAlert(firstNumber, secondNumber, symbol, total) {
     alert(`${firstNumber}${symbol}${secondNumber}=${total}`);
   }
 
   switch (symbol) {
     case "+":
-      finalAlert(
+      showFinalAlert(
         firstNumber,
         secondNumber,
         symbol,
@@ -51,7 +51,7 @@ export default function dz2() {
       );
       break;
     case "-":
-      finalAlert(
+      showFinalAlert(
         firstNumber,
         secondNumber,
         symbol,
@@ -59,7 +59,7 @@ export default function dz2() {
       );
       break;
     case "/":
-      finalAlert(
+      showFinalAlert(
         firstNumber,
         secondNumber,
         symbol,
@@ -67,7 +67,7 @@ export default function dz2() {
       );
       break;
     case "*":
-      finalAlert(
+      showFinalAlert(
         firstNumber,
         secondNumber,
         symbol,

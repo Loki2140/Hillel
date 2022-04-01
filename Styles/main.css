@@ -43,7 +43,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  padding: 10px 10px;
+  padding: 10px 10px 15px 10px;
   margin: 10px 0 0 0;
   background-color: rgba(180, 175, 175, 0.096);
   -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
