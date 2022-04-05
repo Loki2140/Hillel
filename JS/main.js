@@ -1,13 +1,21 @@
 import dz1 from "../JS/dz1.js";
 import dz2 from "../JS/dz2.js";
 import dz3 from "../JS/dz3.js";
+// import dz3_1 from "../JS/dz3.js";
+import dz4 from "../JS/dz4.js";
 
-let dz1Button = document
+const dz1Button = document
   .getElementById("dz1Button")
   .addEventListener("click", dz1);
-let dz2Button = document
+const dz2Button = document
   .getElementById("dz2Button")
   .addEventListener("click", dz2);
-let dz3Button = document
+const dz3Button = document
   .getElementById("dz3Button")
   .addEventListener("click", dz3);
+// const dz3_1Button = document
+//   .getElementById("dz3_1Button")
+//   .addEventListener("click", dz3_1);
+const dz4Button = document
+  .getElementById("dz4Button")
+  .addEventListener("click", dz4);
