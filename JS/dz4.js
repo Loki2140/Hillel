@@ -31,7 +31,6 @@ export default function dz4() {
         ? finalArr.push(Number(initialArr[i]))
         : alert(`'${initialArr[i]}' is not a number, I threw it in the trash.`);
     }
-    console.log("sortArrNum1", finalArr);
     return finalArr;
   }
   // Checking is it a number? Metod #2 forEach - different type of iterate over array variables
@@ -42,7 +41,6 @@ export default function dz4() {
         ? finalArr.push(Number(el))
         : alert(`'${el}' is not a number, I threw it in the trash.`);
     });
-    console.log(finalArr);
     return finalArr;
   }
   // Checking is it a number? Metod #3 ForOf - different array iteration
@@ -53,7 +51,6 @@ export default function dz4() {
         ? finalArr.push(Number(number))
         : alert(`'${number}' is not a number, I threw it in the trash.`);
     }
-    console.log(finalArr);
     return finalArr;
   }
   // Checking is it a number? Metod #4 map - different type of iterate over array variables
@@ -65,7 +62,6 @@ export default function dz4() {
         ? finalArr.push(Number(el))
         : alert(`'${el}' is not a number, I threw it in the trash.`);
     });
-    console.log(finalArr);
     return finalArr;
   }
 
@@ -120,7 +116,6 @@ export default function dz4() {
     for (let i = 0; i < arr.length; i++) {
       finalMsg.push(arr[i]);
       finalMsg.push(symbol);
-      console.log("finalMsg", finalMsg);
     }
     finalMsg.pop();
     finalMsg.push("=");
