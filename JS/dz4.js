@@ -61,7 +61,7 @@ export default function dz4() {
     let finalArr = [];
     initialArr.map((el) => {
       //It is better not to use a map for such purposes. But it's stil work.
-      return !isNaN(el)
+      !isNaN(el)
         ? finalArr.push(Number(el))
         : alert(`'${el}' is not a number, I threw it in the trash.`);
     });
