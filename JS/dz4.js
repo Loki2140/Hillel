@@ -20,7 +20,7 @@ export default function dz4() {
       alert("You have canceled the task!");
       return;
     }
-    return (arrNumbers = sortArrNum4((arrNumbers = arrNumbers.split(" ")))); // You can choose one of the metod sortArrNum1, sortArrNum2, sortArrNum3, sortArrNum4
+    return sortArrNum4(arrNumbers.split(" ")); // You can choose one of the metod sortArrNum1, sortArrNum2, sortArrNum3, sortArrNum4
   }
 
   // Checking is it a number? Metod #1 FOR - array iteration
