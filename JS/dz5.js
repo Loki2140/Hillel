@@ -24,13 +24,13 @@ export default function dz5() {
   alert(`Student average mark is ${averageStudentMark(students[2])}`);
   alert(`All students average mark is ${averageGroupMark(students)} Method 1`);
 
-  function averageStudentMark(student) {
-    let short = student.marks ? student.marks : student;
+  function averageStudentMark(arr) {
+    let short = "marks" in arr ? arr.marks : arr;
     return short.reduce((sum, val) => (sum += val)) / short.length;
   }
-  function averageGroupMark(students) {
-    let arr = students.map((el) => el.marks).flat(); // Also can be used .mapFlat();
-    return averageStudentMark(arr);
+  function averageGroupMark(arr) {
+    let arrey = arr.map((el) => el.marks).flat(); // Also can be used .mapFlat();
+    return averageStudentMark(arrey);
   }
   // Alternative way. Most likely this is the solution you were waiting for.
   alert(
@@ -40,5 +40,89 @@ export default function dz5() {
     let arr = students.map((el) => el.marks);
     arr = arr.reduce((val, el) => val.concat(el), []);
     return averageStudentMark(arr);
+  }
+
+  // Задавание со звездочкой:
+  // Вывести стастистику по группе:
+  // Имя и средний бал студента с минимальным средним балом
+  // Имя и средний бал студента с максимальным средним балом
+  // Имя и средний бал студента с максимальным количеством оценок
+
+  let averageMarks = findAverageMark(students);
+  let quantityMarks = findMarksQuantity(students);
+  anonceStatistic();
+
+  function anonceStatistic() {
+    compareMarks("maxAverageMarkStudent", averageMarks);
+    compareMarks("minAverageMarkStudent", averageMarks);
+    compareMarks("maxMarksAverageMarkStudent", quantityMarks);
+  }
+
+  function compareMarks(action, arr) {
+    switch (action) {
+      case "maxAverageMarkStudent":
+        let maxIndex = 0;
+        arr.reduce((max, cur, i) => {
+          if (max > cur) {
+            return max;
+          } else {
+            maxIndex = i;
+            return (max = cur);
+          }
+        });
+        return anoncePerson(maxIndex, "MAX average mark");
+      case "minAverageMarkStudent":
+        let minIndex = 0;
+        arr.reduce((min, cur, i) => {
+          if (min < cur) {
+            return min;
+          } else {
+            minIndex = i;
+            return (min = cur);
+          }
+        });
+        return anoncePerson(minIndex, "MIN average mark");
+      case "maxMarksAverageMarkStudent":
+        let quantityIndex = 0;
+        arr.reduce((max, cur, i) => {
+          if (max > cur) {
+            return max;
+          } else {
+            quantityIndex = i;
+            return (max = cur);
+          }
+        });
+        return anoncePerson(quantityIndex, "max Quantity of marks");
+      default:
+        alert("Something gone wrong!!!");
+        break;
+    }
+  }
+
+  function findAverageMark(arr) {
+    let marks = arr.map((el) => {
+      return averageStudentMark(el);
+    });
+    arr.forEach((el, i) => {
+      el.averageMark = marks[i];
+    });
+    return marks;
+  }
+  function findMarksQuantity(arr) {
+    let marks = arr.map((el) => {
+      return el.marks.length;
+    });
+    arr.forEach((el, i) => {
+      el.marksQuantity = marks[i];
+    });
+    return marks;
+  }
+
+  function anoncePerson(i, msg, path) {
+    path =
+      msg === "max Quantity of marks"
+        ? students[i].marksQuantity
+        : students[i].averageMark;
+    alert(`${students[i].name} is student with ${msg}, which is ${path}`);
   }
 }
