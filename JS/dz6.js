@@ -26,11 +26,11 @@ export default function dz6() {
 
   function copy(obj) {
     let newObj = Array.isArray(obj) ? [] : {};
-    for (const val in obj) {
-      newObj[val] =
-        typeof obj[val] === "object" && obj[val] !== null
-          ? copy(obj[val])
-          : obj[val];
+    for (const key in obj) {
+      newObj[key] =
+        typeof obj[key] === "object" && obj[key] !== null
+          ? copy(obj[key])
+          : obj[key];
     }
     return newObj;
   }
