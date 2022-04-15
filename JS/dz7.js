@@ -52,6 +52,6 @@ export default function dz7() {
   // console.log(calc.get());
   // console.log(calc.sum(5)); /// 5
 
-  console.log(calc.sum(5).mult(10).sub(40).div(10).get()); // 11
+  console.log(calc.sum(5,10).mult(10).sub(40).div(10).get()); // 21
   console.log(calc.set(0).sum(10).sub(40).div(10).get()); // -3
 }
