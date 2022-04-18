@@ -16,6 +16,11 @@ body {
   justify-content: center;
   width: 60%;
 
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
   .mainTitle {
     margin: auto;
     font-family: "IBM Plex Sans", sans-serif;
@@ -42,15 +47,22 @@ body {
       padding-left: 30px;
       margin: 5px;
     }
-    ol {
+    ol,
+    ul {
       margin: 0;
       li {
-        margin: 0 0 5px 20px;
+        text-align: justify;
+        margin: 0 50px 5px 20px;
         span {
           font-size: 15pt;
         }
       }
     }
+    ol,
+    ul {
+      padding-left: 20px;
+    }
+
     button:hover {
       background-color: rgba(180, 175, 175, 0.87);
     }
@@ -65,13 +77,51 @@ body {
       width: 15%;
     }
   }
+  .dz8 {
+    ul > li:last-child {
+      list-style: none;
+    }
+    ol {
+      li:first-child {
+        margin-top: 5px;
+      }
+    }
+    .result {
+      text-align: center;
+      width: 50px;
+      height: 18px;
+      box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+      font-weight: bold;
+    }
+    .error {
+      box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+      margin: 10px 50px 10px auto;
+      font-weight: bold;
+      font-size: 14pt;
+      color: red;
+      display: flex;
+      margin: 5px 50px;
+      flex-direction: column;
+    }
+  }
 }
+
 @media only screen and (max-width: 768px) {
   .mainWrapper {
     width: 95%;
   }
   .mainWrapper .homework img {
-    width: 45%;
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  .mainWrapper {
+    width: 80%;
+  }
+  .mainWrapper .homework img {
+    width: 20%;
   }
 }
 

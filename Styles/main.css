@@ -23,6 +23,16 @@ body {
   width: 60%;
 }
 
+.mainWrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 50px;
+}
+
 .mainWrapper .mainTitle {
   margin: auto;
   font-family: "IBM Plex Sans", sans-serif;
@@ -61,16 +71,25 @@ body {
   margin: 5px;
 }
 
-.mainWrapper .homework ol {
+.mainWrapper .homework ol,
+.mainWrapper .homework ul {
   margin: 0;
 }
 
-.mainWrapper .homework ol li {
-  margin: 0 0 5px 20px;
+.mainWrapper .homework ol li,
+.mainWrapper .homework ul li {
+  text-align: justify;
+  margin: 0 50px 5px 20px;
 }
 
-.mainWrapper .homework ol li span {
+.mainWrapper .homework ol li span,
+.mainWrapper .homework ul li span {
   font-size: 15pt;
+}
+
+.mainWrapper .homework ol,
+.mainWrapper .homework ul {
+  padding-left: 20px;
 }
 
 .mainWrapper .homework button:hover {
@@ -89,12 +108,55 @@ body {
   width: 15%;
 }
 
+.mainWrapper .dz8 ul > li:last-child {
+  list-style: none;
+}
+
+.mainWrapper .dz8 ol li:first-child {
+  margin-top: 5px;
+}
+
+.mainWrapper .dz8 .result {
+  text-align: center;
+  width: 50px;
+  height: 18px;
+  -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+          box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+  font-weight: bold;
+}
+
+.mainWrapper .dz8 .error {
+  -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+          box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+  margin: 10px 50px 10px auto;
+  font-weight: bold;
+  font-size: 14pt;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media only screen and (max-width: 768px) {
   .mainWrapper {
     width: 95%;
   }
   .mainWrapper .homework img {
-    width: 45%;
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  .mainWrapper {
+    width: 80%;
+  }
+  .mainWrapper .homework img {
+    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */

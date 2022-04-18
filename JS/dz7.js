@@ -4,36 +4,36 @@ export default function dz7() {
   function createCalculator(number) {
     let accamulator = number;
     return {
-      sum(...secoundNumber) {
-        accamulator = secoundNumber.reduce(
+      sum(...secondNumber) {
+        accamulator = secondNumber.reduce(
           (prev, cur) => (prev += cur),
           accamulator
         );
         return this;
       },
-      mult(...secoundNumber) {
-        accamulator = secoundNumber.reduce(
+      mult(...secondNumber) {
+        accamulator = secondNumber.reduce(
           (prev, cur) => (prev *= cur),
           accamulator
         );
         return this;
       },
-      sub(...secoundNumber) {
-        accamulator = secoundNumber.reduce(
+      sub(...secondNumber) {
+        accamulator = secondNumber.reduce(
           (prev, cur) => (prev -= cur),
           accamulator
         );
         return this;
       },
-      div(...secoundNumber) {
-        accamulator = secoundNumber.reduce(
+      div(...secondNumber) {
+        accamulator = secondNumber.reduce(
           (prev, cur) => (prev /= cur),
           accamulator
         );
         return this;
       },
-      set(secoundNumber) {
-        accamulator = secoundNumber;
+      set(secondNumber) {
+        accamulator = secondNumber;
         return this;
       },
       get() {
