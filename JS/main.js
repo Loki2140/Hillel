@@ -6,7 +6,7 @@ import dz4 from "../JS/dz4.js";
 import dz5 from "../JS/dz5.js";
 import dz6 from "../JS/dz6.js";
 import dz7 from "../JS/dz7.js";
-import dz8 from "../JS/dz8.js";
+import dz8 from "../JS/dz8_1.js";
 
 const dz1Button = document
   .getElementById("dz1Button")
