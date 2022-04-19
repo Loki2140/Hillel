@@ -6,7 +6,7 @@ export default function dz8() {
   const operandA = mainElement.querySelector(".firstOperand").value;
   const operandB = mainElement.querySelector(".secondOperand").value;
   const sumbol = mainElement.querySelector(".mathAction").value;
-  const err = [];
+  let err = [];
 
   !(function onButtonClick(sumbol, ...operands) {
     operands = operands.map((el, index) => checkOperand(el, index));
