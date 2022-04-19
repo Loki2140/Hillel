@@ -8,7 +8,7 @@ export default function dz8() {
   const sumbol = mainElement.querySelector(".mathAction").value;
   const err = [];
 
-  !(function startCalc(sumbol, ...operands) {
+  !(function onButtonClick(sumbol, ...operands) {
     operands = operands.map((el, index) => checkOperand(el, index));
     if (err.length <= 0) {
       commitAction(sumbol, ...operands);
