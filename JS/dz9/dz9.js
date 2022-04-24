@@ -1,4 +1,4 @@
-// Djghjcs
+//Variables
 const toDoList = document.querySelector(".toDoList");
 const task = document.querySelector(".task");
 const taskField = task.querySelector("input");
@@ -20,9 +20,8 @@ function onTaskClick(event) {
 function onAddTaskClick() {
   const newTask = getTask();
   const err = validateTask(newTask);
-  return err ? showError(err) : (createEl(newTask), clearTaskField());
+  return err ? showError(err) : (createEl(newTask), clearTaskField()); // Я уже понял, что тренарник не дорлжен возвращать действие и это не совсем верно, такой себе +/-. А можно ли передавать в return несколько действий в круглых скобках. На сколько я понял это не есть ошибка? И нужно ли возвращать что либо? По сути можно без ретурна и тренарника, но запись будет длинее.
 }
-
 function createEl(task) {
   const el = document.createElement("li");
   el.innerHTML = task;
@@ -31,17 +30,14 @@ function createEl(task) {
   el.addEventListener("click", onTaskClick);
   toDoList.appendChild(el);
 }
-
 function onTaskInput() {
   const err = validateTask(getTask());
   return err ? showError(err) : clearError();
 }
-
 function showError(err) {
   errorField.textContent = err;
   taskField.classList.add("red");
 }
-
 function clearError() {
   errorField.textContent = "";
   taskField.classList.remove("red");
@@ -49,12 +45,11 @@ function clearError() {
 function clearTaskField() {
   taskField.value = null;
 }
-
 function getTask() {
   return taskField.value;
 }
-
+// Попробовал такую запись ниже, чисто в образовательных целях. Жду комментарий насколько это валидно, можно ли таким пользоваться?  получается что мы возвращаем либо Error c розличным содержимым, либор Error = false.
 function validateTask(value) {
-  if(value.Z)
-  return value.length < 3 ? "Too few letters - Invalid Task" : null;
+  if (value.trim().length === 0) return "Empty field, no spaces allowed!!!!";
+  return value.length < 3 && "Too few letters - Invalid Task";
 }
