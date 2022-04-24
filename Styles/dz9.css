@@ -1,0 +1,80 @@
+.mainTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainTitle span {
+  margin: auto;
+}
+
+.mainTitle h1 {
+  -webkit-margin-before: 0.27em;
+          margin-block-start: 0.27em;
+  -webkit-margin-after: 0.1em;
+          margin-block-end: 0.1em;
+}
+
+.red {
+  background-color: rgba(240, 56, 56, 0.226) !important;
+}
+
+.yellow {
+  background-color: rgba(196, 243, 134, 0.226) !important;
+}
+
+.green {
+  background-color: rgba(81, 235, 81, 0.226) !important;
+}
+
+.crossing {
+  text-decoration: line-through;
+}
+
+.dz9 .toDo {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.dz9 .toDo ol li {
+  margin-bottom: 0;
+  list-style-position: inside;
+  border-bottom: 1px dotted black;
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
+  padding-left: 1em;
+  text-transform: capitalize;
+}
+
+.dz9 .toDo li:nth-child(even) {
+  background-color: #f8f4e7;
+}
+
+.dz9 .toDo .task {
+  margin: 12px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dz9 .toDo .task :first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.dz9 .toDo .task :last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.dz9 .toDo .task input {
+  width: 70%;
+}
+
+.dz9 .toDo .task button {
+  margin: 0;
+  width: 30%;
+}
+/*# sourceMappingURL=dz9.css.map */
