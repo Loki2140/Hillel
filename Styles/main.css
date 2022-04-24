@@ -125,7 +125,7 @@ body {
   font-weight: bold;
 }
 
-.mainWrapper .dz8 .error {
+.error {
   -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
           box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
   margin: 10px 50px 10px auto;

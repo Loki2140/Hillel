@@ -1,4 +1,15 @@
+# Ignore 
 /JS/dz3_1.js
 /JS/dz6 copy.js
 /.vscode
 /JS/dz7_test.js
+
+# Ignore everything
+*
+
+# But not these files...
+!img\
+!.gitignore
+!Styles
+!JS\dz9
+!dz9.html

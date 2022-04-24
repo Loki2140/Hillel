@@ -94,20 +94,19 @@ body {
         inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
       font-weight: bold;
     }
-    .error {
-      box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-        inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
-      margin: 10px 50px 10px auto;
-      font-weight: bold;
-      font-size: 14pt;
-      color: red;
-      display: flex;
-      margin: 5px 50px;
-      flex-direction: column;
-    }
   }
 }
-
+.error {
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+  margin: 10px 50px 10px auto;
+  font-weight: bold;
+  font-size: 14pt;
+  color: red;
+  display: flex;
+  margin: 5px 50px;
+  flex-direction: column;
+}
 @media only screen and (max-width: 768px) {
   .mainWrapper {
     width: 95%;
