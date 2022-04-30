@@ -5,7 +5,8 @@ body {
   padding: 0;
   background-color: rgba(180, 175, 175, 0.096);
 }
-
+.mainTitle {
+}
 .mainWrapper {
   margin: auto;
   font-family: "IBM Plex Sans", sans-serif;
@@ -22,13 +23,25 @@ body {
     margin: 0 50px;
   }
   .mainTitle {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     font-family: "IBM Plex Sans", sans-serif;
     color: black;
     font-weight: bold;
     text-transform: uppercase;
+    span {
+      margin: auto;
+    }
+    h1 {
+      margin-block-start: 0.27em;
+      margin-block-end: 0.1em;
+    }
   }
   .homework {
+    .red {
+      background-color: rgba(255, 122, 122, 0.329);
+    }
     justify-content: center;
     flex-direction: column;
     display: flex;

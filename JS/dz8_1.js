@@ -60,4 +60,4 @@ export default function dz8() {
   }
 }
 let operands = document.querySelectorAll(".class");
-[...operands.forEach((el) => el.value)];
+// [...operands.forEach((el) => el.value)];

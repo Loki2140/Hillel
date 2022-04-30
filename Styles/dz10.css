@@ -1,0 +1,149 @@
+.homework form {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.homework form input {
+  width: 0;
+}
+
+.homework form * {
+  border: 1px solid #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5em;
+}
+
+.homework form button {
+  margin: 0 !important;
+}
+
+.homework ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.homework :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+.homework ::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+.homework :-ms-input-placeholder {
+  text-align: center;
+}
+
+.homework .del:hover {
+  background-color: rgba(180, 175, 175, 0.87);
+}
+
+.homework .flex-table {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.homework .flex-table thead {
+  color: #fff;
+  background: #009485;
+}
+
+.homework .flex-table thead tr,
+.homework .flex-table tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homework .flex-table tbody tr + tr {
+  border: 1px solid #ccc;
+}
+
+.homework .flex-table thead tr th,
+.homework .flex-table tbody tr td {
+  border: 1px solid #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 640px) {
+  .homework .flex-table {
+    border: 0;
+  }
+  .homework .flex-table thead {
+    display: none;
+  }
+  .homework .flex-table tbody tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1em;
+    border: 1px solid #ccc;
+  }
+  .homework form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homework form input {
+    width: auto;
+  }
+  .homework .flex-table tbody tr td {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homework .flex-table tbody tr td + td {
+    border-top: 1px solid #ccc;
+  }
+  .homework .flex-table tbody tr td:before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -0.5em -0.5em 0.75em -0.5em;
+    padding: 0.5em;
+    content: attr(data-label);
+    color: #fff;
+    background: #009485;
+  }
+}
+/*# sourceMappingURL=dz10.css.map */

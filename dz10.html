@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/main.css">
+  <link rel="stylesheet" href="Styles/dz10.css">
+  <script src="JS/dz10/dz10.js" defer></script>
+  <title>Solodkovski JS homework #10</title>
+</head>
+
+<body>
+  <div class="mainWrapper">
+    <div class="mainTitle">
+      <span>Solodkovski Vitaliy</span>
+      <h1>Homework# 10</h1>
+    </div>
+    <div class="homework">
+      <h2>Task 1 Write a function...</h3>
+        <ul>
+          <li>Реализовать таблицу контактов. Таблица состоит из 4-х колонок (Имя, Фамилия, номер, действия).</li>
+          <li>Внизу таблицы находяться инпуты для ввода соответствующих данных и кнопка добавить.</li>
+          <li>Также нужно реализовать валидацию, чтобы нельзя было добавить контакт с каким-то пустым полем</li>
+          <li>В каждой строке контакта есть кнопка удалить, которая удаляет запись.</li>
+          <li>Реализовать Вывод списка, добавление, удаление.</li>
+        </ul>
+    </div>
+    <div class="homework dz10">
+      <div class="curren-tasks">
+        <h3>Current tasks</h2>
+          <table class="flex-table">
+            <caption>Таблица контактов</caption>
+            <thead>
+              <tr>
+                <th>Имя</th>
+                <th>Фамилия</th>
+                <th>Номер</th>
+                <th>Удалить</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr>
+                <td>Ян</td>
+                <td>Солодковский</td>
+                <td>0508505404</td>
+                <td class="del">X</td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="newContact">
+            <input name="name" type="text" placeholder="Name">
+            <input name="surname" type="text" placeholder="Surname">
+            <input name="telNum" type="text" placeholder="Telephone Number">
+            <button name="addRow" id="addRow">Add Task</button>
+          </form>
+          <div class="error"></div>
+      </div>
+    </div>
+    <div class="homework dzEND">
+      <img src="img/tobe.png" alt="tobe">
+    </div>
+  </div>
+  <script type="text/template" id="textTableTemplate">
+    <tr>
+      <td>{{name}}</td>
+      <td>{{surname}}</td>
+      <td>{{tel}}</td>
+      <td class="del">X</td>
+    </tr>
+  </script>
+</body>
+
+</html>
