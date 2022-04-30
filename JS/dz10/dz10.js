@@ -20,14 +20,8 @@ function onButtonClick(e) {
   addTableRow(firstName, surname, tel);
   clearFields(firstName, surname, tel);
 }
-function clearFields(...arr) {
-  arr.forEach((el) => (el.value = ""));
-}
 function onDelClick(e) {
   if (e.target.classList.contains("del")) return del(e.target.parentElement);
-}
-function validateTask(value) {
-  if (value.trim().length === 0) return;
 }
 function validateFields(...arr) {
   return arr.map((el) => validateField(el));
@@ -46,6 +40,9 @@ function clearError() {
 }
 function del(el) {
   el.remove();
+}
+function clearFields(...arr) {
+  arr.forEach((el) => (el.value = ""));
 }
 function showError() {
   errorField.insertAdjacentHTML(
