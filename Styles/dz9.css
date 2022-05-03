@@ -41,6 +41,12 @@
 }
 
 .dz9 .toDo ol li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 0;
   list-style-position: inside;
   border-bottom: 1px dotted black;
@@ -48,6 +54,23 @@
   background-color: white;
   padding-left: 1em;
   text-transform: capitalize;
+  line-height: 30px;
+}
+
+.dz9 .toDo ol li .del {
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin-right: 2em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.dz9 .toDo ol li .del:active {
+  color: #b48123;
+  border: 1px solid #b48123;
 }
 
 .dz9 .toDo li:nth-child(even) {

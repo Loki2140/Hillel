@@ -1,6 +1,5 @@
 // const newContact = document.querySelector(".newContact");
 const ERROR_CLASS = "red";
-const DISABLED_CLASS = "red";
 const TABLE_ITEAM = document.getElementById("textTableTemplate").innerHTML;
 
 const tbody = document.querySelector(".tbody");
