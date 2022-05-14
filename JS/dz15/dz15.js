@@ -8,7 +8,7 @@ const STORAGE_KEY = "contactList";
 
 const contactBody = document.querySelector(".tbody");
 const formContact = document.querySelector(".newContact");
-const [firstName, email, phone, address, button] = formContact;
+const [firstName, email, phone, address, button] = formContact; //обсуждали что способ не совсем верный, но уже не стал исправлять. п
 const errorField = document.querySelector(".error");
 let contactList = [];
 
