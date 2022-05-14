@@ -59,11 +59,20 @@
   }
   .flex-table thead tr th,
   .flex-table tbody tr td {
+    font-size: 8pt;
     border: 1px solid #ccc;
     justify-content: center;
+    flex-wrap: wrap;
     display: flex;
     flex: 1;
-    padding: 0.5em;
+    padding: 0.3em 0 0.3em 0;
+  }
+
+  .flex-table thead tr th:last-child,
+  .flex-table tbody tr td:last-child {
+    max-width: 50px;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (max-width: 640px) {
     .flex-table {
