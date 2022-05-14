@@ -61,9 +61,9 @@ function getRowItem() {
   tr.name = firstName.value;
   tr.email = email.value;
   tr.phone = phone.value;
-  //  По сути костыль, но ничего лучше не придумал. Если street не указано через пробел, на его месте будет пустая строка.
+  //  Все что ниже, на мой взгляд костыль, но ничего лучше не придумал. Если street не указано через пробел, на его месте будет строка "Неизвестно!.
   const [city, street] = address.value.split(" ");
-  tr.address = { city: city, street: street ? street : "" };
+  tr.address = { city: city, street: street ? street : "Неизвестно!" };
   return tr;
 }
 
