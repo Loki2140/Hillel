@@ -1,3 +1,4 @@
+"use strict";
 const ERROR_CLASS = "red";
 const TABLE_ITEAM_TEMPLATE =
   document.getElementById("textTableTemplate").innerHTML;
