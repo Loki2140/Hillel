@@ -35,7 +35,7 @@ function sendRequest(url, method = "GET", body = null) {
     if (response.ok) {
       return response.json();
     }
-    // до конца разобрался с ошибками, и синтаксисом THORW - CATCH, и пока что совсем не понял нужен ли THORW чтобы что-то CATCH
+    // до конца не разобрался с ошибками, и синтаксисом THORW - CATCH, и пока что совсем не понял нужен ли THORW чтобы что-то CATCH
     return response.json().then((error) => {
       const err = new Error("Что-то пошло не так!");
       err.date = error;
@@ -64,7 +64,7 @@ function removeItem(id) {
     })
     .catch((err) => console.log(err));
 }
-// Использовал async, потому что столкнулся с проблемой в редактирование данных с сервера. Они приходили с опозданием. И contact = undefind.
+// Использовал async, потому что столкнулся с проблемой в редактирование данных с сервера. В моей реализации они приходили с опозданием. И contact = undefind.
 // Вот тут уже нужен async и await
 async function loadOneItem(id) {
   await sendRequest(URL_REQUEST + id)
@@ -100,7 +100,11 @@ function onButtonClick(e) {
   }
   contact = {};
   button.innerHTML = "Add Task";
-  !newTrItem.id ? addItem(newTrItem) : editItem(newTrItem);
+  if (!newTrItem.id) {
+    addItem(newTrItem);
+  } else {
+    editItem(newTrItem);
+  }
   resetForm();
 }
 function getRowItem(id) {
