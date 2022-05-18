@@ -15,7 +15,12 @@ let contactList = [];
 button.addEventListener("click", onButtonClick);
 contactBody.addEventListener("click", onContactClick);
 
+
+
+
 init();
+
+
 function init() {
   fetch("https://jsonplaceholder.typicode.com/users")
     .then((res) => res.json())
@@ -69,18 +74,10 @@ function getRowItem() {
 
 function addRowItem(tr) {
   tr.id = Date.now();
-  contactList.push(tr);
-  // saveData();
+  contactList.push(tr);  
+
   renderItemList();
 }
-
-// function saveData() {
-//   localStorage.setItem(STORAGE_KEY, JSON.stringify(contactList));
-// }
-// function restoreData() {
-//   const data = localStorage.getItem(STORAGE_KEY);
-//   return data ? JSON.parse(data) : [];
-// }
 
 function onContactClick(event) {
   const target = event.target;
