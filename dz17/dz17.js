@@ -59,7 +59,7 @@ function onAlbumsClick(event) {
   albumListApi
     .loadOneItem(
       URL_REQUEST_ALBUM,
-      getItemId(target, ALBUM_ITEM_CLASS, ALBUM_ITEM_ATTR)
+      getItemId(target, ALBUM_ITEM_CLASS, ALBUM_ITEM_ATTR) //Не уверен что так стоит передавать атрибут, но в таком варианте функция становится универсальной, мне просто неужно отдельно передавать тот атрибут который я жедаю найти
     )
     .then((data) => {
       imgList = data;
@@ -67,9 +67,9 @@ function onAlbumsClick(event) {
     })
     .catch((err) => console.log(err));
 }
-function getItemId(el, ItemClass, id) {
+function getItemId(el, ItemClass, attr) {
   const tableItemId = el.closest("." + ItemClass);
-  return +tableItemId.getAttribute(id);
+  return +tableItemId.getAttribute(attr);
 }
 
 function onImgClick(event) {
@@ -84,5 +84,5 @@ function onImgClick(event) {
   bigBlock.addEventListener("click", delBigImg);
 }
 function delBigImg() {
-  document.querySelector(".bigImg").remove();
+  document.querySelector(".bigImg").remove(); // Если пропадает блок, то и иветн пропадает? Ведь блока нет, не зачем следить?
 }
