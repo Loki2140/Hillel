@@ -16,7 +16,7 @@ class RestApi {
     });
   }
 
-  async loadOneItem(url, id = "1") {
+  async loadOneItem(url, id) {
     return await this._sendRequest(url + id);
   }
 

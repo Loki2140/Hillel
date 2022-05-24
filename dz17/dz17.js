@@ -29,6 +29,7 @@ function init() {
     .loadList(URL_REQUEST_ALBUMS)
     .then((data) => {
       albumList = data;
+      renderItemList(albumsBlock, TABLE_ITEM_TEMPL, albumList);
       albumListApi
         .loadOneItem(URL_REQUEST_ALBUM, albumList[0].id)
         .then((data) => {
@@ -36,7 +37,6 @@ function init() {
           renderItemList(imgBlock, BLOCK_IMG_TEMPL, imgList);
         })
         .catch((err) => console.log(err));
-      renderItemList(albumsBlock, TABLE_ITEM_TEMPL, albumList);
     })
     .catch((err) => console.log(err));
 }
