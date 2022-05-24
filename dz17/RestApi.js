@@ -20,7 +20,7 @@ class RestApi {
     return await this._sendRequest(url + id);
   }
 
-  loadList(url) {
-    return this._sendRequest(url);
+  async loadList(url) {
+    return await this._sendRequest(url);
   }
 }

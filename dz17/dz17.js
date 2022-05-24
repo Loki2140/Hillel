@@ -29,18 +29,18 @@ function init() {
     .loadList(URL_REQUEST_ALBUMS)
     .then((data) => {
       albumList = data;
+      albumListApi
+        .loadOneItem(URL_REQUEST_ALBUM, albumList[0].id)
+        .then((data) => {
+          imgList = data;
+          renderItemList(imgBlock, BLOCK_IMG_TEMPL, imgList);
+        })
+        .catch((err) => console.log(err));
       renderItemList(albumsBlock, TABLE_ITEM_TEMPL, albumList);
     })
     .catch((err) => console.log(err));
-
-  albumListApi
-    .loadOneItem(URL_REQUEST_ALBUM)
-    .then((data) => {
-      imgList = data;
-      renderItemList(imgBlock, BLOCK_IMG_TEMPL, imgList);
-    })
-    .catch((err) => console.log(err));
 }
+
 function renderItemList(block, template, list) {
   block.innerHTML = list.map((el) => interpolate(template, el)).join("\n");
 }
