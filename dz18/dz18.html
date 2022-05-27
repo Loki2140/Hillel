@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dz18.css">
+  <script src="./RestApi.js" defer></script>
+  <script src="./dz18.js" defer></script>
+
+  <title>Solodkovski JS homework #18</title>
+</head>
+
+<body>
+  <div class="mainWrapper">
+    <div class="mainTitle">
+      <span>Solodkovski Vitaliy</span>
+      <h1>Homework# 18</h1>
+    </div>
+    <div class="homework">
+      <div><button id="addSticker">Add Sticker</button></div>
+      <div class="stikersPlacer"></div>
+
+    </div>
+    <div class="homework dzEND">
+      <img src="./tobe.png" alt="tobe">
+    </div>
+  </div>
+  <script type="text/template" id="labelTemplate">
+    <div data-id="{{id}}" class="stiker">
+      <div class="flex"><button class="del">X</button></div>
+      <div><textarea rows="4" cols="20" name="text" class="textarea">{{description}}</textarea></div>
+    </div>
+  </script>
+</body>
+
+</html>
