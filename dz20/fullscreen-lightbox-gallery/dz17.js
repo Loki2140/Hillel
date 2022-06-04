@@ -42,12 +42,7 @@ function renderItemList(block, template, list) {
   const html = list.map((el) => interpolate(template, el)).join("\n");
   block.html(html);
 
-  $(".gallery a").simpleLightbox({
-    nav: true,
-    navText: ["&lsaquo;", "&rsaquo;"],
-    animationSlide: false,
-    loop: true
-  });
+  console.log($(".lightboxed").lightboxed());
 }
 
 function interpolate(template, obj) {
