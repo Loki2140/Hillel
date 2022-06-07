@@ -7,8 +7,8 @@ class TodosController {
       onToggle: (id) => this.toggleTodo(id),
       onDelete: (id) => this.removeTodo(id)
     });
-    $container.append(this._todosListView.$el);
-    $container.append(this._todosFormView.$el);
+    $container.prepend(this._todosFormView.$el);
+    $container.prepend(this._todosListView.$el);
 
     this._todosList = new TodosCollection();
     this._todosList
