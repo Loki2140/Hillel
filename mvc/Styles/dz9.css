@@ -1,0 +1,100 @@
+.mainTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainTitle span {
+  margin: auto;
+}
+
+.mainTitle h1 {
+  -webkit-margin-before: 0.27em;
+          margin-block-start: 0.27em;
+  -webkit-margin-after: 0.1em;
+          margin-block-end: 0.1em;
+}
+
+.red {
+  background-color: rgba(240, 56, 56, 0.226) !important;
+}
+
+.yellow {
+  background-color: rgba(196, 243, 134, 0.226) !important;
+}
+
+.done {
+  background-color: rgba(81, 235, 81, 0.226) !important;
+  text-decoration: line-through;
+}
+
+.dz9 .task {
+  margin: 12px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dz9 .task :first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.dz9 .task :last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.dz9 .task input {
+  width: 70%;
+}
+
+.dz9 .task button {
+  margin: 0;
+  width: 30%;
+}
+
+.dz9 .toDoList .task-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  list-style-position: inside;
+  border-bottom: 1px dotted black;
+  border-radius: 5px 5px 5px 5px;
+  background-color: white;
+  padding-left: 1em;
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+.dz9 .toDoList .task-item .delete-btn {
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin-right: 2em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.dz9 .toDoList .task-item .delete-btn:active {
+  color: #b48123;
+  border: 1px solid #b48123;
+}
+
+.dz9 .toDoList li:nth-child(even) {
+  background-color: #f8f4e7;
+}
+
+.dz9 .toDo {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=dz9.css.map */
