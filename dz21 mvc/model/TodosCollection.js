@@ -9,7 +9,6 @@ class TodosCollection {
     return fetch(TODOS_URL)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         this.list = data;
       });
   }
