@@ -1,0 +1,3 @@
+$(() => {
+  new TodosController($(".dz9"));
+});
