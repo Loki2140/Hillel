@@ -11,8 +11,6 @@
     "start",
     "quick",
     "cleanCSS",
-    "bable",
-    "less",
     "sass",
     "uglify",
     "concat",
