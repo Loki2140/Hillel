@@ -1,0 +1,118 @@
+.homework {
+  form {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    background: #fff;
+    input {
+      width: 0;
+    }
+    * {
+      border: 1px solid #ccc;
+      justify-content: center;
+      display: flex;
+      flex: 1;
+      padding: 0.5em;
+    }
+    button {
+      margin: 0 !important;
+    }
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+  .del:hover {
+    background-color: rgba(180, 175, 175, 0.87);
+  }
+  .flex-table {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  .flex-table thead {
+    color: #fff;
+    background: #009485;
+  }
+  .flex-table thead tr,
+  .flex-table tbody tr {
+    display: flex;
+  }
+  .flex-table tbody tr + tr {
+    border: 1px solid #ccc;
+  }
+  .flex-table thead tr th,
+  .flex-table tbody tr td {
+    font-size: 8pt;
+    border: 1px solid #ccc;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex: 1;
+    padding: 0.3em 0 0.3em 0;
+  }
+
+  .flex-table tbody tr:hover {
+    background-color: rgba(184, 245, 181, 0.87);
+  }
+  .flex-table tbody tr:active {
+    background-color: rgba(156, 141, 241, 0.87);
+  }
+
+  .flex-table thead tr th:last-child,
+  .flex-table tbody tr td:last-child {
+    max-width: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 640px) {
+    .flex-table {
+      border: 0;
+    }
+    .flex-table thead {
+      display: none;
+    }
+    .flex-table tbody tr {
+      flex-direction: column;
+      margin: 1em;
+      border: 1px solid #ccc;
+    }
+    form {
+      flex-direction: column;
+      input {
+        width: auto;
+      }
+    }
+    .flex-table tbody tr td {
+      flex-direction: column;
+    }
+    .flex-table tbody tr td + td {
+      border-top: 1px solid #ccc;
+    }
+    .flex-table tbody tr td:before {
+      display: flex;
+      align-items: center;
+      margin: -0.5em -0.5em 0.75em -0.5em;
+      padding: 0.5em;
+      content: attr(data-label);
+      color: #fff;
+      background: #009485;
+    }
+  }
+}
