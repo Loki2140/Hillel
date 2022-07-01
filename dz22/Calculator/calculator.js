@@ -1,8 +1,9 @@
+"use strict";
 let accamulator;
 const add = require("./add");
 const div = require("./div");
 const sub = require("./sub");
-const mult = require("./mult");
+const mult = require("./mult");                                   
 const set = require("./set");
 const get = require("./get");
 
@@ -13,5 +14,6 @@ module.exports = {
   sub,
   mult,
   set,
-  get
+  get,
+  accamulator
 };

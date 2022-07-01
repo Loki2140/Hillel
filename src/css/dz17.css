@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(180, 175, 175, 0.096);
+}
+
+body .bigImg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: blackout;
+          animation-name: blackout;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+body .bigImg img {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@-webkit-keyframes blackout {
+  100.0% {
+    background-color: rgba(0, 0, 0, 0.855);
+  }
+}
+
+@keyframes blackout {
+  100.0% {
+    background-color: rgba(0, 0, 0, 0.855);
+  }
+}
+
+.mainWrapper {
+  margin: auto;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 12pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+}
+
+.mainWrapper .sideKickWraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainWrapper .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 50px;
+}
+
+.mainWrapper .mainTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mainWrapper .mainTitle span {
+  margin: auto;
+}
+
+.mainWrapper .mainTitle h1 {
+  -webkit-margin-before: 0.27em;
+          margin-block-start: 0.27em;
+  -webkit-margin-after: 0.1em;
+          margin-block-end: 0.1em;
+}
+
+.mainWrapper .homework {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 10px 10px 15px 10px;
+  margin: 10px 0 0 0;
+  background-color: rgba(180, 175, 175, 0.096);
+  -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+          box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+}
+
+.mainWrapper .homework .red {
+  background-color: rgba(255, 122, 122, 0.329);
+}
+
+.mainWrapper .homework .albumBlock {
+  padding: 0 0 0 0;
+  width: 30%;
+}
+
+.mainWrapper .homework .imgBlock {
+  margin: 21px 20px 21px 0;
+  padding: 20px;
+  width: 70%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainWrapper .homework .imgBlock .flexImg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.mainWrapper .homework .imgBlock .flexImg img {
+  width: auto;
+}
+
+.mainWrapper .homework h2,
+.mainWrapper .homework h3 {
+  padding-left: 30px;
+  margin: 5px;
+}
+
+.mainWrapper .homework p {
+  padding-left: 30px;
+  margin: 5px;
+}
+
+.mainWrapper .homework ol,
+.mainWrapper .homework ul {
+  margin: 0;
+}
+
+.mainWrapper .homework ol li,
+.mainWrapper .homework ul li {
+  text-align: justify;
+  margin: 0 50px 5px 20px;
+}
+
+.mainWrapper .homework ol li span,
+.mainWrapper .homework ul li span {
+  font-size: 15pt;
+}
+
+.mainWrapper .homework ol,
+.mainWrapper .homework ul {
+  padding-left: 20px;
+}
+
+.mainWrapper .homework button:hover {
+  background-color: rgba(180, 175, 175, 0.87);
+}
+
+.mainWrapper .homework button {
+  margin: 0 50px;
+  background-color: rgba(180, 175, 175, 0.096);
+  -webkit-box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, 0.2), -3px -3px 2px 0 rgba(252, 252, 252, 0.822);
+          box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, 0.2), -3px -3px 2px 0 rgba(252, 252, 252, 0.822);
+}
+
+.mainWrapper .homework img {
+  margin-left: auto;
+  width: 15%;
+}
+
+.mainWrapper .dz8 ul > li:last-child {
+  list-style: none;
+}
+
+.mainWrapper .dz8 ol li:first-child {
+  margin-top: 5px;
+}
+
+.mainWrapper .dz8 .result {
+  text-align: center;
+  width: 50px;
+  height: 18px;
+  -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+          box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+  font-weight: bold;
+}
+
+.error {
+  -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+          box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(170, 170, 170, 0.5);
+  margin: 10px 50px 10px auto;
+  font-weight: bold;
+  font-size: 14pt;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainWrapper {
+    width: 95%;
+  }
+  .mainWrapper .homework img {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 930px) {
+  .mainWrapper {
+    width: 80%;
+  }
+  .mainWrapper .homework img {
+    width: 20%;
+  }
+}
+
+.homework form {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.homework form input {
+  width: 0;
+}
+
+.homework form * {
+  border: 1px solid #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5em;
+}
+
+.homework form button {
+  margin: 0 !important;
+}
+
+.homework ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.homework :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+.homework ::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+.homework :-ms-input-placeholder {
+  text-align: center;
+}
+
+.homework .del:hover {
+  background-color: rgba(180, 175, 175, 0.87);
+}
+
+.homework .flex-table {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.homework .flex-table thead {
+  color: #fff;
+  background: #009485;
+}
+
+.homework .flex-table thead tr,
+.homework .flex-table tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homework .flex-table tbody tr + tr {
+  border: 1px solid #ccc;
+}
+
+.homework .flex-table thead tr th,
+.homework .flex-table tbody tr td {
+  font-size: 8pt;
+  border: 1px solid #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  padding: 0.3em 0 0.3em 0;
+}
+
+.homework .flex-table thead tr th:last-child,
+.homework .flex-table tbody tr td:last-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.homework .flex-table tbody tr:hover {
+  background-color: rgba(184, 245, 181, 0.87);
+}
+
+.homework .flex-table tbody tr:active {
+  background-color: rgba(156, 141, 241, 0.87);
+}
+
+@media screen and (max-width: 640px) {
+  .homework .flex-table {
+    border: 0;
+  }
+  .homework .flex-table thead {
+    display: none;
+  }
+  .homework .flex-table tbody tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1em;
+    border: 1px solid #ccc;
+  }
+  .homework form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homework form input {
+    width: auto;
+  }
+  .homework .flex-table tbody tr td {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homework .flex-table tbody tr td + td {
+    border-top: 1px solid #ccc;
+  }
+  .homework .flex-table tbody tr td:before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: -0.5em -0.5em 0.75em -0.5em;
+    padding: 0.5em;
+    content: attr(data-label);
+    color: #fff;
+    background: #009485;
+  }
+}
+/*# sourceMappingURL=dz17.css.map */
