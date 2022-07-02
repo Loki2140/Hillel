@@ -44,7 +44,7 @@ export class TodosListView extends EventEmitter {
 
   _wrapRow(el) {
     const rowView = new TodosTaskRowView(el);
-    rowView.on("edit", (model) => this.trigger("edit", model));
+    // rowView.on("edit", (model) => this.trigger("edit", model));
     return rowView;
   }
 }

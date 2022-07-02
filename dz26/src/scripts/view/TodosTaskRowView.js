@@ -41,9 +41,10 @@ export class TodosTaskRowView extends EventEmitter {
   init() {
     this.$el = $(TodosTaskRowView.template);
     this.renderRow();
-    this.$el.on("click", TodosTaskRowView.TASK_DELETE_SELECTOR, () =>
-      this._model.delete()
-    );
+    this.$el.on("click", TodosTaskRowView.TASK_DELETE_SELECTOR, (event) => {
+      this._model.delete();
+      event.stopPropagation();
+    });
     this.$el.on("click", TodosTaskRowView.TASK_EDIT_SELECTOR, () =>
       this._model.toggleTodo()
     );

@@ -1,14 +1,14 @@
 import $ from "jquery";
 import { TodosFormView } from "./TodosFormView";
 import { TodosListView } from "./TodosListView";
-import { EventEmitter } from "../common/EventEmitter";
-
-export class TodoViews extends EventEmitter {
+// import { EventEmitter } from "../common/EventEmitter";
+// extends EventEmitter
+export class TodoViews {
   static TEMPLATE = `
   <div class="toDo"><div class="flex"><div>Task</div><div>Actions</div>
   </div>`;
   constructor($container, collection) {
-    super();
+    // super();
     this._collection = collection;
     this.init();
     this._$listView = new TodosListView(collection);
